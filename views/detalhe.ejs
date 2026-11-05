@@ -1,0 +1,12 @@
+<%- include('partials/cabecalho', { titulo: time.nome }) %>
+
+<h1><%= time.nome %></h1>
+<ul>
+  <li><strong>ID:</strong> <%= time.id %></li>
+  <li><strong>Estádio:</strong> <%= time.estadio %></li>
+  <li><strong>Cidade:</strong> <%= time.cidade %></li>
+</ul>
+
+<p><a href="/times">Voltar para a lista de times</a></p>
+
+<%- include('partials/rodape') %>

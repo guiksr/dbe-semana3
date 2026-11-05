@@ -1,0 +1,32 @@
+<%- include('partials/cabecalho', { titulo: 'Times' }) %>
+
+<h1>Lista de Times</h1>
+
+<% if (times.length === 0) { %>
+  <p>Nenhum time cadastrado no momento.</p>
+<% } else { %>
+  <table border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Estádio</th>
+        <th>Cidade</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const time of times) { %>
+        <tr>
+          <td><%= time.id %></td>
+          <td><%= time.nome %></td>
+          <td><%= time.estadio %></td>
+          <td><%= time.cidade %></td>
+          <td><a href="/times/<%= time.id %>">Detalhes</a></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+<% } %>
+
+<%- include('partials/rodape') %>

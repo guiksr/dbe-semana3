@@ -1,0 +1,16 @@
+{
+  "name": "dbe-semana3",
+  "version": "1.0.0",
+  "description": "Atividade Prática – Catálogo de times com EJS (DBE - Semana 3)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Guilherme Kaiser",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0"
+  }
+}
